@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title-name">To-Do List</h1>
+
+      <!-- Input Section -->
+      <div class="inputs">
+        <input type="text" class="title-text" id="title" placeholder="Add Task..." />
+        <textarea name="text" class="description-text" id="desc" placeholder="Description"></textarea>
+        <button id="add-btn">Add Task</button>
+      </div>
+
+      <!-- Filter Section -->
+      <div class="filters">
+        <button id="all-btn">All</button>
+        <button id="active-btn">Active</button>
+        <button id="completed btn">Completed</button>
+      </div>
+
+      <!-- Task List Section -->
+      <div id="taskList">
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" />
+            <div class="text">
+              <h3>Sample Task Title</h3>
+              <p>Sample task description...</p>
+            </div>
+          </div>
+          <div class="task-actions">
+            <button class="edit">✏️</button>
+            <button class="delete">🗑️</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toggle Section -->
+
+      <button class="toggle-btn" id="Toggle-btn">Dark Mode</button>
+    </div>
+  </body>
+</html>
