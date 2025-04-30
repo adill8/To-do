@@ -25,6 +25,11 @@ body{
 
 .title-name{
   margin-bottom: 10px;
+  padding: 10px;
+  color: rgb(22, 22, 104);
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px gray;
+
 }
 
 .inputs{
@@ -32,25 +37,28 @@ body{
   flex-direction: column;
   margin-bottom: 10px;
   gap: 10px;
+  
 }
 
 .title-text{
   padding: 10px;
-  border: 1px solid #dbd7d7;
+  border: 1px solid #007bff;
   border-radius: 8px;
   font-size: 16px;
+  box-shadow: 1px 2px 4px gray;
 }
 
 .description-text{
   padding: 8px;
-  border: 1px solid #dbd7d7;
+  border: 1px solid #007bff;
   border-radius: 8px;
   font-size: 16px;
+  box-shadow: 1px 2px 4px gray;
 }
 
 .inputs button{
   padding: 10px;
-  background-color: rgb(127, 127, 235);
+  background-color: rgb(22, 22, 104);
   color: white;
  border: none;
   border-radius: 8px;
@@ -61,6 +69,7 @@ body{
 
 .inputs button:hover{
   background-color: #5558e4;
+  box-shadow: 0 5px 0 #5558e4;
 }
 
 .filters {
@@ -77,7 +86,7 @@ body{
   padding: 8px 10px;
   border: 1px solid #007bff;
   background-color: white;
-  color: #007bff;
+  color: rgb(22, 22, 104);
   cursor: pointer;
   border-radius: 5px;
 }
@@ -85,6 +94,7 @@ body{
 .filters button:hover{
   background-color: #5558e4;
   color: white;
+  box-shadow: 0 5px 0 #5558e4;
 }
 
 .task {
@@ -96,6 +106,7 @@ body{
   background-color: #f5f5f5;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px gray;
 }
 
  .task-content {
@@ -130,20 +141,28 @@ body{
   transition: background 0.3s ease;
 }  
 
- .task-actions button:hover {
-  background-color: #eee;
-} 
-
-.toggle-btn{
-  padding: 10px;
-  border: 1px solid #007bff;
-  border-radius: 8px;
+.edit-btn{
+  color: rgb(8, 192, 8);
+}
+.del-btn{
+  color: rgb(235, 23, 23);
 }
 
-.toggle-btn:hover{
-  background-color: #5558e4;
+.toggle-btn{
+  background-color: #222;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
   color: white;
+  font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 5px 0 #080808;
+  transition: all 1s ease-out;
+}
+
+ .toggle-btn:active{
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #080808;
 
 }
 
