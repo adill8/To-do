@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  }
+
+  .container{
+width: 100%;
+max-width: 60%;
+margin-top: 30px;
+position: relative;
+
+
+  }
+
+  .title-name{
+    background-image: 
+    linear-gradient(to right, rgba(211, 105, 202, 0.5), rgba(105, 14, 252, 0.705)),
+    url("img/michael-hamments-SHE3ALFxYYA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 160px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;  
+
+  }
+
+  .wrapper{
+    position: absolute;
+   top: 140px;
+   left: 27%;
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   width: 380px;
+  }
+
+  .title-text, .description-text{
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #e6e9ff;
+    margin-bottom: 7px;
+  }
+
+  .inputs button{
+    padding: 8px 0px;
+    margin-bottom: 20px;
+    box-shadow: 6px 12px 2px rgba(146, 146, 250, 0.2);
+  border: none;
+  color: rgb(82, 82, 83);
+  border-radius: 8px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 1s ease-out;
+  background-image: linear-gradient(to right, rgba(211, 105, 202, 0.5), rgba(105, 14, 252, 0.705));
+  }
+
+  .task{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 14px 10px;
+    border-bottom: 0.5px solid rgb(212, 211, 211);
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+    list-style: none;
+ 
+  }
+  .task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .completed .text h3,
+  .completed .text p{
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2.5px;
+  }
+
+  .task-actions {
+    display: flex;
+    gap: 7px;
+  } 
+
+  .task-actions button {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  } 

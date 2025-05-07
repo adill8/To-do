@@ -27,7 +27,7 @@ function addTask() {
     const taskTitle = tasks[i].querySelector("h3").innerText;
     const taskDescription = tasks[i].querySelector("p").innerText;
 
-    if(taskTitle === title && taskDescription === desc){
+    if(taskTitle === title || taskDescription === desc){
       isDublicate = true;
       break;
     }
@@ -106,7 +106,7 @@ taskList.addEventListener("click", function (e) {
   }
 });
 
-// Task Completed
+// // Task Completed
 taskList.addEventListener("change", function(e){
   if(e.target.type === "checkbox"){
     const task = e.target.closest(".task");
@@ -133,26 +133,26 @@ taskList.addEventListener("change", function(e){
   }
 });
 
-// Local Storage Data
-function saveData(){
-    localStorage.setItem("data",  taskList.innerHTML);
-}
+// // Local Storage Data
+// function saveData(){
+//     localStorage.setItem("data",  taskList.innerHTML);
+// }
 
-// Show Data
-function showTask(){
-  taskList.innerHTML = localStorage.getItem("data");
-}
-showTask();
+// // Show Data
+// function showTask(){
+//   taskList.innerHTML = localStorage.getItem("data");
+// }
+// showTask();
 
-// Dark Mode Section
-btnToggle.addEventListener("click", function(){
-  body.classList.toggle("dark-mode");
+// // Dark Mode Section
+// btnToggle.addEventListener("click", function(){
+//   body.classList.toggle("dark-mode");
 
-  if(body.classList.contains("dark-mode")){
-    btnToggle.textContent = "Light Mode";
-  }
-  else{
-    btnToggle.textContent = "Dark Mode";
-  }
-})
+//   if(body.classList.contains("dark-mode")){
+//     btnToggle.textContent = "Light Mode";
+//   }
+//   else{
+//     btnToggle.textContent = "Dark Mode";
+//   }
+// })
 

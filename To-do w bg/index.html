@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title-name">To-Do List</h1>
+
+      <!-- Input Section -->
+      <div class="wrapper">
+        <div class="inputs">
+          <input
+            type="text"
+            class="title-text"
+            id="titleInput"
+            placeholder="Add Task..."
+          />
+          <textarea
+            name="text"
+            class="description-text"
+            id="description"
+            placeholder="Description"
+          ></textarea>
+          <button id="btn-Add">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+
+        <!-- Task List Section -->
+        <ul id="taskList">
+          
+          
+        </ul>
+      </div>
+
+      <!-- Toggle Section -->
+
+      <!-- <button class="toggle-btn" id="Toggle-btn">Dark Mode</button> -->
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
